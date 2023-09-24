@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.py-8 {
+  padding: 80px 0;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 14px !important;
+  color: #7b7a7a;
+}
+
+.btn-all {
+  background-color: #fa524f !important;
+  font-size: 14px !important;
+}
+
+.btn-all:hover {
+  background-color: #fa7270 !important;
+}
+
+::selection {
+  color: #ffffff !important;
+  background-color: #fbb416 !important;
+}
+
+.heading-div h3 {
+  font-size: 18px !important;
+  letter-spacing: 1px;
+  color: #fbaf03;
+  margin-left: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.heading-div h3::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  border: 1.5px solid #fbb416;
+  left: -50px;
+  top: 50%;
+}
+.heading-div h2 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.Header-all-bg {
+  background-image: url("../../images/Header-all.jpg");
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.Header-all-bg h2 {
+  font-size: 52px !important;
+  color: #f1f1f1;
+  font-weight: 600;
+}
+.Header-all-bg h3 {
+  font-size: 18px !important;
+  color: #ffffffcf;
+  font-weight: 400;
+}
+.PageActive {
+  background-color: #fa524f !important;
+  color: #fff !important;
+}
+.page-link:hover {
+  background-color: #fa524f !important;
+  color: #fff !important;
+}
+.page-link:focus {
+  box-shadow: 0 0 0 !important;
+}
+/* ============================ NavBar ======================== */
+
+.navbar {
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.nav-link {
+  color: #000 !important;
+  font-weight: 400 !important;
+  transition: all 0.5s;
+  position: relative !important;
+}
+
+/* .nav-link::before {
+  content: "\f1b0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #fbae02;
+  padding-right: 4px;
+} */
+
+.nav-link:hover {
+  color: #fbaf03 !important;
+}
+
+.active {
+  color: #fbaf03 !important;
+  font-weight: 500;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+}
+
+.dropdown-item {
+  background-color: #fff !important;
+}
+
+.dropdown-item.active {
+  color: #fbaf03;
+  background-color: #fff !important;
+}
+.dropdown-item:hover {
+  color: #fbaf03;
+}
+.dropdown-item {
+  font-size: 14px !important;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e9e8e9;
+}
+
+/* ============================ Footer ======================== */
+
+.sub-footer span:hover {
+  color: #fbaf03 !important;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.footer-list ul li a:hover {
+  color: #fff !important;
+  font-weight: 500 !important;
+  transition: all 0.5s;
+}
+
+/* ============================ Home Section  ======================== */
+.Home-header {
+  background-image: url("../../images/Home-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+  display: flex;
+  align-items: center;
+}
+.Home-content h1 {
+  font-size: 55px !important;
+  font-weight: 600;
+}
+.Home-content p {
+  font-size: 18px !important;
+  width: 50%;
+}
+
+.Home-content span {
+  position: relative;
+}
+.Home-content span::after {
+  content: "";
+  border: 2px solid #fbaf03;
+  position: absolute;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
+
+.svg-border {
+  transform: rotate(180deg);
+  color: #fff !important;
+  bottom: -40px !important;
+  z-index: 2 !important;
+}
+.elementor-shape-fill {
+  fill: #fff;
+  transform-origin: center !important;
+}
+.Home-bgSec {
+  background-image: url("../../images/Home-bgSec.jpg");
+  background-repeat: no-repeat;
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+
+.About-bgSec {
+  background-image: url("../../images/About-bg.jpg");
+  background-repeat: no-repeat;
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+
+.img-Process {
+  margin: 15px 0 40px 0;
+}
+
+.img-Process img {
+  width: 254px;
+  border-style: solid;
+  border-width: 17px 28px 17px 20px;
+  border-color: #fcae03;
+  border-radius: 80px 160px 80px 150px;
+}
+
+.Process-Span {
+  padding: 18px 30px 18px 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  color: #fbaf03;
+  font-size: 22px;
+  font-weight: 600;
+  z-index: 2;
+  position: absolute;
+  left: 65%;
+  top: 0;
+}
+
+/* ============================ Puppies Section  ======================== */
+
+.Protfolio-Menu button {
+  background-color: #f1f1f1 !important;
+}
+
+.Protfolio-Menu button:hover {
+  background-color: #fa524f !important;
+  color: #fff !important;
+}
+
+.Protfolio-Menu .active {
+  background-color: #fa524f !important;
+  color: #fff !important;
+}
+.Protfolio-img {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.Protfolio-img:hover {
+  transform: scale(1.1);
+}
+.Protfolio-span {
+  background-color: #fa524f;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 14px !important;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+}
+
+/* ============================ Services Section  ======================== */
+
+.service-div {
+  border: 2px solid #e9e8e9;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.service-div:hover {
+  border: 2px solid #fa524f;
+  cursor: pointer;
+}
+
+.services-img {
+  left: 43%;
+  top: -15%;
+}
+
+.service-icon {
+  bottom: -10%;
+  left: 45%;
+  background-color: #fa524f !important;
+  color: #e9e8e9 !important;
+  border-radius: 50%;
+}
+
+/* ============================ Contact Section  ======================== */
+
+.contact-icon {
+  font-size: 45px !important;
+  background-color: #fa524f;
+  border-radius: 50%;
+  z-index: 2 !important;
+  color: #fff !important;
+  padding: 10px;
+}
+
+.Contact-Form {
+  background-color: #f1f1f1;
+  padding: 40px;
+}
+
+.Contact-Form input,
+.Contact-Form textarea {
+  padding: 15px !important;
+}
+
+.Contact-Form input:focus,
+.Contact-Form textarea:focus {
+  border: 0 !important;
+  border: 1px solid #fa524f !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.Contact-Form input::placeholder,
+.Contact-Form textarea::placeholder {
+  font-size: 14px !important;
+}
+
+.Contact-Form button {
+  background-color: #fa524f;
+  color: #e9e8e9;
+  font-size: 15px;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 50px;
+}
+
+.Contact-Form button:hover {
+  background-color: #fa7270;
+}
+
+/* ============================ Services Section  ======================== */
+
+.Serrvices-list {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.Serrvices-list a {
+  display: block;
+  background-color: #fff;
+  margin: 10px 30px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+.service-listBg {
+  background: linear-gradient(rgba(60, 47, 32, 0.8), rgba(60, 47, 32, 0.8)),
+    url("../../images/puppies.jpg");
+  background-size: cover;
+}
+
+/* ============================ PetListing Section  ======================== */
+.PetListing-main {
+  width: 70% !important;
+}
+
+.PetListing-main h3 {
+  display: inline-block;
+  font-size: 18px !important;
+  font-weight: 600;
+  color: #5b5b5b !important;
+  margin-right: 5px;
+}
+
+/* ============================ Latest News Section  ======================== */
+.News-cart {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+}
+.News-cart h2 {
+  font-size: 24px !important;
+  font-weight: 600;
+  cursor: pointer;
+}
+.News-cart h2:hover,
+.News-cart span:hover {
+  color: #fbb416 !important;
+  transition: all 0.5s;
+}
+
+.Tags-Div button {
+  font-size: 14px !important;
+  border: 0 !important;
+  background-color: #fff !important;
+  padding: 8px;
+  text-transform: capitalize;
+}
+
+/* ============================ Shop Section  ======================== */
+
+.Shop-div {
+  box-shadow: 0px 4px 4px rgba(41, 48, 55, 0.1);
+  border-radius: 0 0 10px 10px;
+}
+.Shop-div h2 {
+  font-size: 22px !important;
+}
+.Shop-div p {
+  font-size: 18px !important;
+  font-weight: 600;
+}
+.Shop-div button {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  background-color: #fa524f;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+/* ============================  GoToTop Btn Section ================= */
+
+.GoTotop-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-btn {
+  font-size: 16px;
+  font-weight: bolder;
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  background-color: #fa524f;
+  box-shadow: 0px 0px 3px 3px rgba(204, 204, 204, 0.4);
+  border-radius: 50%;
+  bottom: 50px;
+  right: 50px;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: fixed;
+  transition: all 0.5s;
+}
+.top-btn:hover {
+  background-color: #ffb830;
+}
+.bi-arrow-up {
+  animation: gototop 0.8s linear infinite alternate-reverse;
+}
+@keyframes gototop {
+  0% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+/* ================ {{{{{{{{{{ All Media Querry }}}}}}}}} ============= */
+@media (max-width: 992px) {
+  .Home-content p {
+    width: 70%;
+  }
+  .Home-bgSec {
+    height: 400px;
+    background-size: cover;
+  }
+  .About-bgSec {
+    height: 400px;
+    background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  .Home-content p {
+    width: 90%;
+  }
+  .Home-header {
+    background-size: cover;
+    height: 600px;
+  }
+  .Home-bgSec {
+    height: 500px;
+    background-position: center;
+  }
+  .About-bgSec {
+    height: 500px;
+    background-position: center;
+  }
+  .Home-content h1 {
+    font-size: 45px !important;
+  }
+}
+@media (max-width: 576px) {
+  .Home-content p {
+    width: 100%;
+  }
+  .Home-header {
+    height: 600px;
+    justify-items: center;
+    background-position: 40%;
+  }
+}
