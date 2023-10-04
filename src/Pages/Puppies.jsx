@@ -4,6 +4,7 @@ import { ProtfolioData } from "../Data/Data";
 import HeaderAll from "../Components/HeaderAll";
 const Puppies = () => {
   const [items, setItems] = useState(ProtfolioData);
+  const [activeTab, setActiveTab] = useState("all");
 
   const filterItem = (categroyItem) => {
     const updatedItems = ProtfolioData.filter((elm) => {
@@ -11,6 +12,22 @@ const Puppies = () => {
     });
 
     setItems(updatedItems);
+  };
+
+  const allHandler = () => {
+    setItems(ProtfolioData), setActiveTab("all");
+  };
+
+  const dogHandler = () => {
+    filterItem("Dogs"), setActiveTab("dogs");
+  };
+
+  const catHandler = () => {
+    filterItem("Cats"), setActiveTab("cats");
+  };
+
+  const otherHandler = () => {
+    setActiveTab("other"), filterItem("Other");
   };
 
   return (
@@ -26,26 +43,34 @@ const Puppies = () => {
         <div className="Protfolio-Menu container">
           <div className="d-flex justify-content-center mt-3">
             <button
-              className=" btn mx-3 rounded-pill active"
-              onClick={() => setItems(ProtfolioData)}
+              className={`btn mx-3 rounded-pill ${
+                activeTab === "all" ? "active" : ""
+              }`}
+              onClick={allHandler}
             >
               All
             </button>
             <button
-              className=" btn mx-3 rounded-pill"
-              onClick={() => filterItem("Dogs")}
+              className={`btn mx-3 rounded-pill ${
+                activeTab === "dogs" ? "active" : ""
+              }`}
+              onClick={dogHandler}
             >
               Dogs
             </button>
             <button
-              className=" btn mx-3 rounded-pill"
-              onClick={() => filterItem("Cats")}
+              className={`btn mx-3 rounded-pill ${
+                activeTab === "cats" ? "active" : ""
+              }`}
+              onClick={catHandler}
             >
               Cats
             </button>
             <button
-              className=" btn mx-3 rounded-pill"
-              onClick={() => filterItem("Other")}
+              className={`btn mx-3 rounded-pill ${
+                activeTab === "other" ? "active" : ""
+              }`}
+              onClick={otherHandler}
             >
               Other
             </button>
